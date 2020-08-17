@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" href="/./style/main.css">
 	<link rel="shortcut icon" href="/favicon.ico" title="Favicon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-	<title>test</title>
+	<title>Commit message 和 Change log 编写指南</title>
   
   <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?awwssw1snsnsnn1ndndnndnd99j";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();
   </script>
@@ -49,7 +49,7 @@
     
   
   <h1 class="title">
-    test
+    Commit message 和 Change log 编写指南
   </h1>
   
 
@@ -57,11 +57,11 @@
     <ul class="article-info">
       <li>
         发布
-        <time datetime="2020-08-14T01:33:53.000Z" itemprop="datePublished">2020-08-14</time>
+        <time datetime="2020-08-16T18:32:41.000Z" itemprop="datePublished">2020-08-17</time>
       </li>
       <li>
         
-    更新 <time datetime="2020-08-14T09:39:16.601Z" itemprop="dateUpdated">2020-08-14</time>
+    更新 <time datetime="2020-08-17T02:35:35.061Z" itemprop="dateUpdated">2020-08-17</time>
 
       </li>
       <li id="busuanzi_container_page_pv">
@@ -73,7 +73,25 @@
     <div class="article">
       <div class="content">
         
-        <h1 id="test-nihaoya"><a href="#test-nihaoya" class="headerlink" title="test nihaoya"></a>test nihaoya</h1>
+        <p>Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;hello world&quot;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码的-m参数，就是用来指定 commit mesage 的。</p>
+<p>如果一行不够，可以只执行git commit，就会跳出文本编辑器，让你写多行。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure>
+
+<p>目前，社区有多种 Commit message 的写法规范。本文介绍<a target="_blank" rel="noopener" href="https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w">Angular 规范</a>，这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。</p>
+<h2 id="一、Commit-message-的作用"><a href="#一、Commit-message-的作用" class="headerlink" title="一、Commit message 的作用"></a>一、Commit message 的作用</h2><p>格式化的Commit message，有几个好处。</p>
+<ol>
+<li><p>提供更多的历史信息，方便快速浏览。<br>比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的</p>
+</li>
+<li><p>可以过滤某些commit（比如文档改动），便于快速查找信息。</p>
+</li>
+</ol>
+<p>比如，下面的命令仅仅显示本次发布新增加的功能。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log &lt;last release&gt; HEAD --grep feature</span><br></pre></td></tr></table></figure>
+
+
       </div>
         <div class="support-author">
           <p>感谢您的阅读。 🙏
