@@ -2,12 +2,12 @@
 
 # Site
 title: lweizhoucn
-subtitle: 'lweizhou'
-description: '一切随缘，安得自在。'
-keywords:
+subtitle: lweizhou
+description: 一切随缘，安得自在。
+keywords: java
 author: lweizhoucn
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -45,7 +45,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: false #自动判断代码语言
   tab_replace: ''
   wrap: true
   hljs: false
