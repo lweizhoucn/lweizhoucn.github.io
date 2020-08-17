@@ -104,30 +104,10 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yearn
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: https://github.com/lweizhoucn/lweizhoucn.github.io
-
-
-feed:
-  type: atom
-  path: /atom.xml
-  limit: 20
-
-jekyll:
-  project: false
-  selfIntro: true
-  sign_image: image/bear.svg
-
-# Social
-social:
-  github: https://github.com/lweizhoucn
- 
-
-# Analytics
-google_analytics: UA-80781234-1
-baidu_analytics: //hm.baidu.com/hm.js?ee75cf111111aa99f8540efa2570970
