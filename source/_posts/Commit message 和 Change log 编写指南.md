@@ -1,7 +1,8 @@
 ---
 title: Commit message 和 Change log 编写指南
 date: 2020-08-17T10:32:41+08:00
-tags:
+categories: 
+- git
 ---
 Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。
 
@@ -17,7 +18,7 @@ git commit -m "hello world"
 git commit
 ```
 
-目前，社区有多种 Commit message 的写法规范。本文介绍[Angular 规范](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w)，这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。
+目前，社区有多种 Commit message 的写法规范。本文介绍[Angular 规范](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y)，这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。
 
 ## 一、Commit message 的作用
 
