@@ -54,7 +54,7 @@ git log <last release> HEAD --grep feature
 
 Change Log 是发布新版本时，用来说明与上一个版本差异的文档，详见后文。
 
-![](./Commit%20message%20和%20Change%20log%20编写指南/3.png)
+![](./Commit%20message%20和%20Change%20log%20编写指南/4.png)
 
 ## 二、Commit message 的格式
 ***
