@@ -502,7 +502,8 @@ math:
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    enable: false
+    enable: true
+    cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     # See: https://mhchem.github.io/MathJax-mhchem/
     mhchem: false
 
@@ -583,8 +584,8 @@ comments:
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: test
   count: true
   #post_meta_order: 0
 
@@ -997,3 +998,8 @@ vendors:
 css: css
 js: js
 images: images
+
+
+auto_excerpt:
+  enable: true
+  length: 50
