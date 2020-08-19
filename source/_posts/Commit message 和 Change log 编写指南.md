@@ -9,8 +9,8 @@ Git 每次提交代码，都要写 Commit message（提交说明），否则就�
 ```shell
 git commit -m "hello world"
 ```
-
 上面代码的-m参数，就是用来指定 commit mesage 的。
+<!--more-->
 
 如果一行不够，可以只执行git commit，就会跳出文本编辑器，让你写多行。
 
@@ -35,4 +35,4 @@ git commit
 git log <last release> HEAD --grep feature
 ```
 
-test
+

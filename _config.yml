@@ -95,7 +95,10 @@ ignore:
 
 theme: next
 
-deploy:
-  type: git
-  repo: https://github.com/lweizhoucn/lweizhoucn.github.io
-  branch: master
+
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
