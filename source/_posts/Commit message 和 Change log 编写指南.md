@@ -33,7 +33,7 @@ git commit
 
 格式化的Commit message，有几个好处。
 
-### 1. 提供更多的历史信息，方便快速浏览。
+### 1.1 提供更多的历史信息，方便快速浏览。
 比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的
 
 ```shell
@@ -41,7 +41,7 @@ git log <last tag> HEAD --pretty=format:%s
 ```
 ![](./Commit%20message%20和%20Change%20log%20编写指南/3.png)
 
-### 2. 可以过滤某些commit（比如文档改动），便于快速查找信息。 
+### 1.2 可以过滤某些commit（比如文档改动），便于快速查找信息。 
 
 比如，下面的命令仅仅显示本次发布新增加的功能。
 
@@ -49,11 +49,28 @@ git log <last tag> HEAD --pretty=format:%s
 git log <last release> HEAD --grep feature
 ```
 
-### 3. 可以直接从commit生成Change log。
+### 1.3 可以直接从commit生成Change log。
 
 Change Log 是发布新版本时，用来说明与上一个版本差异的文档，详见后文。
 
 ![](./Commit%20message%20和%20Change%20log%20编写指南/4.png)
 
 ## 二、Commit message 的格式
-***
+
+每次提交，Commit message 都包括三个部分：Header，Body 和 Footer。
+```text
+<type>(<scope>): <subject>
+// 空一行
+<body>
+// 空一行
+<footer>
+```
+其中，Header 是必需的，Body 和 Footer 可以省略。
+
+不管是哪一个部分，任何一行都不得超过72个字符（或100个字符）。这是为了避免自动换行影响美观。
+
+### 2.1 Header
+Header部分只有一行，包括三个字段：type（必需）、scope（可选）和subject（必需）。
+
+#### type
+**type** 用于说明 commit 的类别，只允许使用下面7个标识。
