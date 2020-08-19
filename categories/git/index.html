@@ -549,18 +549,18 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     });
     new Valine({
       el         : '#valine-comments',
-      verify     : false,
-      notify     : false,
+      verify     : true,
+      notify     : true,
       appId      : 'neLta25vnuhbcoKLW37UXOiE-gzGzoHsz',
       appKey     : 'CryXYoXI6TAQcJKyENBVoEtC',
       placeholder: "Just go go",
       avatar     : 'mm',
       meta       : guest,
-      pageSize   : '10' || 10,
+      pageSize   : '5' || 10,
       visitor    : false,
       lang       : '' || 'zh-cn',
       path       : location.pathname,
-      recordIP   : false,
+      recordIP   : true,
       serverURLs : ''
     });
   }, window.Valine);
