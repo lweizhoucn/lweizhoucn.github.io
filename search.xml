@@ -3,7 +3,10 @@
   <entry>
     <title>Commit message 和 Change log 编写指南</title>
     <url>/2020/08/16/Commit%20message%20%E5%92%8C%20Change%20log%20%E7%BC%96%E5%86%99%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。</p>
+    <content><![CDATA[<blockquote>
+<p>转载自 <a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html">Commit message 和 Change log 编写指南</a></p>
+</blockquote>
+<p>Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;hello world&quot;</span><br></pre></td></tr></table></figure>
 <p>上面代码的-m参数，就是用来指定 commit mesage 的。</p>
 <a id="more"></a>
@@ -27,16 +30,5 @@
       <categories>
         <category>git</category>
       </categories>
-  </entry>
-  <entry>
-    <title>两数相加</title>
-    <url>/2020/08/17/%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>hash</tag>
-      </tags>
   </entry>
 </search>
