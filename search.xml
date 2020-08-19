@@ -13,18 +13,21 @@
 
 <p>如果一行不够，可以只执行git commit，就会跳出文本编辑器，让你写多行。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure>
-<p><img src="/posts/2910968457/header.gif"><br>目前，社区有多种 Commit message 的写法规范。本文介绍<a href="https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y">Angular 规范</a>，这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。</p>
+
+<p><img src="/posts/2910968457/1.png"></p>
+<p>但是，一般来说，commit message 应该清晰明了，说明本次提交的目的。</p>
+<p><img src="/posts/2910968457/2.png"></p>
+<p>目前，社区有多种 Commit message 的写法规范。本文介绍<a href="https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.greljkmo14y0">Angular 规范</a><br>（见上图），这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。</p>
 <h2 id="一、Commit-message-的作用"><a href="#一、Commit-message-的作用" class="headerlink" title="一、Commit message 的作用"></a>一、Commit message 的作用</h2><p>格式化的Commit message，有几个好处。</p>
-<ol>
-<li><p>提供更多的历史信息，方便快速浏览。<br>比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的</p>
-</li>
-<li><p>可以过滤某些commit（比如文档改动），便于快速查找信息。</p>
-</li>
-</ol>
-<p>比如，下面的命令仅仅显示本次发布新增加的功能。</p>
+<p>###1. 提供更多的历史信息，方便快速浏览。<br>比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log &lt;last tag&gt; HEAD --pretty=format:%s</span><br></pre></td></tr></table></figure>
+<p><img src="/posts/2910968457/3.png"></p>
+<h3 id="2-可以过滤某些commit（比如文档改动），便于快速查找信息。"><a href="#2-可以过滤某些commit（比如文档改动），便于快速查找信息。" class="headerlink" title="2. 可以过滤某些commit（比如文档改动），便于快速查找信息。"></a>2. 可以过滤某些commit（比如文档改动），便于快速查找信息。</h3><p>比如，下面的命令仅仅显示本次发布新增加的功能。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log &lt;last release&gt; HEAD --grep feature</span><br></pre></td></tr></table></figure>
 
-
+<h3 id="3-可以直接从commit生成Change-log。"><a href="#3-可以直接从commit生成Change-log。" class="headerlink" title="3. 可以直接从commit生成Change log。"></a>3. 可以直接从commit生成Change log。</h3><p>Change Log 是发布新版本时，用来说明与上一个版本差异的文档，详见后文。</p>
+<p><img src="/posts/2910968457/3.png"></p>
+<h2 id="二、Commit-message-的格式"><a href="#二、Commit-message-的格式" class="headerlink" title="二、Commit message 的格式"></a>二、Commit message 的格式</h2><hr>
 ]]></content>
       <categories>
         <category>git</category>
