@@ -27,8 +27,7 @@ git commit
 
 ![](./Commit%20message%20和%20Change%20log%20编写指南/2.png)
 
-目前，社区有多种 Commit message 的写法规范。本文介绍[Angular 规范](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.greljkmo14y0)
-（见上图），这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。
+目前，社区有多种 Commit message 的写法规范。本文介绍[Angular 规范](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.greljkmo14y0)（见上图），这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。
 
 ## 一、Commit message 的作用
 
