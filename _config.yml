@@ -11,7 +11,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://weizhoucn.githubio.io/lweizhoucn
+url: https://weizhoucn.githubio.io
 root: /
 # permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink/
@@ -44,13 +44,13 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false #自动判断代码语言
+  auto_detect: false #自动判断代码语言 十分耗费资源。 如果你不需要使用「子语言高亮」功能，或者不介意在书写代码块时标记语言，请不要启用此功能
   tab_replace: ''
   wrap: true
   hljs: false
@@ -106,4 +106,4 @@ search:
   path: search.xml
   field: post
   format: html
-  limit: 10000
+  limit: 100
