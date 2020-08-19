@@ -4,6 +4,8 @@ date: 2020-08-17T10:32:41+08:00
 categories: 
 - git
 ---
+> 转载自 [Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+
 Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。
 
 ```shell

@@ -40,9 +40,9 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  small: /images/header.gif
+  medium: /images/header.gif
+  apple_touch_icon: /images/header.gif
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -167,7 +167,7 @@ avatar:
   #/images/avatar.gif
   url: /images/header.gif
   # If true, the avatar will be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: true
 
@@ -678,7 +678,7 @@ google_analytics:
   only_pageview: false
 
 # Baidu Analytics
-baidu_analytics: # <app_id>
+baidu_analytics: d6d3972ca9de2224532c62c01197f783 # <app_id>
 
 # Growingio Analytics
 growingio_analytics: # <project_id>
@@ -986,7 +986,7 @@ vendors:
   # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
   three:
   three_waves:
-  canvas_lines:
+  canvas_lines: true
   canvas_sphere:
 
   # Internal version: 1.0.0
