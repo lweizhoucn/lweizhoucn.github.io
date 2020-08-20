@@ -148,7 +148,7 @@ Closes #123, #245, #992
 ```
 
 ### Revert
-还有一种特殊情况，如果当前 commit 用于撤销以前的 commit，则必须以**revert:**开头，后面跟着被撤销 Commit 的 Header。
+还有一种特殊情况，如果当前 commit 用于撤销以前的 commit，则必须以<font color=#F000000 size=4>revert:</font>开头，后面跟着被撤销 Commit 的 Header。
 ```text
 revert: feat(pencil): add 'graphiteWidth' option
 
