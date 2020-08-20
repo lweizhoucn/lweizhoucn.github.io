@@ -56,7 +56,7 @@
 <p>也可以一次关闭多个 issue 。</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">Closes #123, #245, #992</span><br></pre></td></tr></table></figure>
 
-<h3 id="Revert"><a href="#Revert" class="headerlink" title="Revert"></a>Revert</h3><p>还有一种特殊情况，如果当前 commit 用于撤销以前的 commit，则必须以**revert:**开头，后面跟着被撤销 Commit 的 Header。</p>
+<h3 id="Revert"><a href="#Revert" class="headerlink" title="Revert"></a>Revert</h3><p>还有一种特殊情况，如果当前 commit 用于撤销以前的 commit，则必须以<font color="#F000000" size="4">revert:</font>开头，后面跟着被撤销 Commit 的 Header。</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">revert: feat(pencil): add &#x27;graphiteWidth&#x27; option</span><br><span class="line"></span><br><span class="line">This reverts commit 667ecc1654a317a13331b17617d973392f415f02.</span><br></pre></td></tr></table></figure>
 
 <p>Body部分的格式是固定的，必须写成This reverts commit <hash>.，其中的hash是被撤销 commit 的 SHA 标识符。</hash></p>
