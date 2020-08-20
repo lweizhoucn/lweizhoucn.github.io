@@ -19,15 +19,20 @@
 <p><img src="/posts/2910968457/2.png"></p>
 <p>目前，社区有多种 Commit message 的写法规范。本文介绍<a href="https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.greljkmo14y0">Angular 规范</a>（见上图），这是目前使用最广的写法，比较合理和系统化，并且有配套的工具。</p>
 <h2 id="一、Commit-message-的作用"><a href="#一、Commit-message-的作用" class="headerlink" title="一、Commit message 的作用"></a>一、Commit message 的作用</h2><p>格式化的Commit message，有几个好处。</p>
-<h3 id="1-提供更多的历史信息，方便快速浏览。"><a href="#1-提供更多的历史信息，方便快速浏览。" class="headerlink" title="1. 提供更多的历史信息，方便快速浏览。"></a>1. 提供更多的历史信息，方便快速浏览。</h3><p>比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的</p>
+<h3 id="1-1-提供更多的历史信息，方便快速浏览。"><a href="#1-1-提供更多的历史信息，方便快速浏览。" class="headerlink" title="1.1 提供更多的历史信息，方便快速浏览。"></a>1.1 提供更多的历史信息，方便快速浏览。</h3><p>比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log &lt;last tag&gt; HEAD --pretty=format:%s</span><br></pre></td></tr></table></figure>
 <p><img src="/posts/2910968457/3.png"></p>
-<h3 id="2-可以过滤某些commit（比如文档改动），便于快速查找信息。"><a href="#2-可以过滤某些commit（比如文档改动），便于快速查找信息。" class="headerlink" title="2. 可以过滤某些commit（比如文档改动），便于快速查找信息。"></a>2. 可以过滤某些commit（比如文档改动），便于快速查找信息。</h3><p>比如，下面的命令仅仅显示本次发布新增加的功能。</p>
+<h3 id="1-2-可以过滤某些commit（比如文档改动），便于快速查找信息。"><a href="#1-2-可以过滤某些commit（比如文档改动），便于快速查找信息。" class="headerlink" title="1.2 可以过滤某些commit（比如文档改动），便于快速查找信息。"></a>1.2 可以过滤某些commit（比如文档改动），便于快速查找信息。</h3><p>比如，下面的命令仅仅显示本次发布新增加的功能。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log &lt;last release&gt; HEAD --grep feature</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-可以直接从commit生成Change-log。"><a href="#3-可以直接从commit生成Change-log。" class="headerlink" title="3. 可以直接从commit生成Change log。"></a>3. 可以直接从commit生成Change log。</h3><p>Change Log 是发布新版本时，用来说明与上一个版本差异的文档，详见后文。</p>
+<h3 id="1-3-可以直接从commit生成Change-log。"><a href="#1-3-可以直接从commit生成Change-log。" class="headerlink" title="1.3 可以直接从commit生成Change log。"></a>1.3 可以直接从commit生成Change log。</h3><p>Change Log 是发布新版本时，用来说明与上一个版本差异的文档，详见后文。</p>
 <p><img src="/posts/2910968457/4.png"></p>
-<h2 id="二、Commit-message-的格式"><a href="#二、Commit-message-的格式" class="headerlink" title="二、Commit message 的格式"></a>二、Commit message 的格式</h2><hr>
+<h2 id="二、Commit-message-的格式"><a href="#二、Commit-message-的格式" class="headerlink" title="二、Commit message 的格式"></a>二、Commit message 的格式</h2><p>每次提交，Commit message 都包括三个部分：Header，Body 和 Footer。</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</span><br><span class="line">// 空一行</span><br><span class="line">&lt;body&gt;</span><br><span class="line">// 空一行</span><br><span class="line">&lt;footer&gt;</span><br></pre></td></tr></table></figure>
+<p>其中，Header 是必需的，Body 和 Footer 可以省略。</p>
+<p>不管是哪一个部分，任何一行都不得超过72个字符（或100个字符）。这是为了避免自动换行影响美观。</p>
+<h3 id="2-1-Header"><a href="#2-1-Header" class="headerlink" title="2.1 Header"></a>2.1 Header</h3><p>Header部分只有一行，包括三个字段：type（必需）、scope（可选）和subject（必需）。</p>
+<h4 id="type"><a href="#type" class="headerlink" title="type"></a>type</h4><p><strong>type</strong> 用于说明 commit 的类别，只允许使用下面7个标识。</p>
 ]]></content>
       <categories>
         <category>git</category>
