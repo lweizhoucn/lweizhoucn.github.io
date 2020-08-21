@@ -8,12 +8,12 @@ date: 2020-08-17 02:32:41
 > 转载自 [Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
 
 Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。
-
+<!--more-->
 ```shell
 git commit -m "hello world"
 ```
 上面代码的-m参数，就是用来指定 commit mesage 的。
-<!--more-->
+
 
 如果一行不够，可以只执行git commit，就会跳出文本编辑器，让你写多行。
 
