@@ -22,20 +22,18 @@
     var CONFIG = {"hostname":"weizhoucn.githubio.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":15,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="以下文章来源于程序员小明 ，作者小明本文主要给大家介绍SpringBoot中如何通过sl4j日志组件优雅地记录日志。其实，我们入门 JAVA 的第一行代码就是一行日志，那你现在还在使用System.out.println(“Hello,小明!”)记录日志吗？  我经历过的日志组件 我最开始接触的日志组件是Log4j  Log4j 作为Apache的一个开放源代码的项目，通过使用Log4j，我们可">
+  <meta name="description" content="以下文章来源于程序员小明 ，作者小明本文主要给大家介绍SpringBoot中如何通过sl4j日志组件优雅地记录日志。其实，我们入门 JAVA 的第一行代码就是一行日志，那你现在还在使用System.out.println(“Hello,小明!”)记录日志吗？  我经历过的日志组件我最开始接触的日志组件是Log4j  Log4j 作为Apache的一个开放源代码的项目，通过使用Log4j，我们可以">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBoot优雅地配置日志">
 <meta property="og:url" content="https://weizhoucn.githubio.io/posts/1722421508/index.html">
 <meta property="og:site_name" content="lweizhoucn">
-<meta property="og:description" content="以下文章来源于程序员小明 ，作者小明本文主要给大家介绍SpringBoot中如何通过sl4j日志组件优雅地记录日志。其实，我们入门 JAVA 的第一行代码就是一行日志，那你现在还在使用System.out.println(“Hello,小明!”)记录日志吗？  我经历过的日志组件 我最开始接触的日志组件是Log4j  Log4j 作为Apache的一个开放源代码的项目，通过使用Log4j，我们可">
+<meta property="og:description" content="以下文章来源于程序员小明 ，作者小明本文主要给大家介绍SpringBoot中如何通过sl4j日志组件优雅地记录日志。其实，我们入门 JAVA 的第一行代码就是一行日志，那你现在还在使用System.out.println(“Hello,小明!”)记录日志吗？  我经历过的日志组件我最开始接触的日志组件是Log4j  Log4j 作为Apache的一个开放源代码的项目，通过使用Log4j，我们可以">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwOTI2ODY3Nw==&scene=161#wechat_redirect">
 <meta property="article:published_time" content="2020-08-20T19:16:43.000Z">
-<meta property="article:modified_time" content="2020-08-21T03:25:35.979Z">
+<meta property="article:modified_time" content="2020-08-21T05:01:56.548Z">
 <meta property="article:author" content="lweizhoucn">
 <meta property="article:tag" content="springboot,log">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwOTI2ODY3Nw==&scene=161#wechat_redirect">
 
 <link rel="canonical" href="https://weizhoucn.githubio.io/posts/1722421508/">
 
@@ -239,7 +237,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-21 03:16:43 / 修改时间：11:25:35" itemprop="dateCreated datePublished" datetime="2020-08-21T03:16:43+08:00">2020-08-21</time>
+              <time title="创建时间：2020-08-21 03:16:43 / 修改时间：13:01:56" itemprop="dateCreated datePublished" datetime="2020-08-21T03:16:43+08:00">2020-08-21</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -278,7 +276,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>7.3k</span>
+              <span>7.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -300,11 +298,11 @@
         <blockquote>
 <p>以下文章来源于程序员小明 ，作者小明<br>本文主要给大家介绍SpringBoot中如何通过sl4j日志组件优雅地记录日志。其实，我们入门 JAVA 的第一行代码就是一行日志，那你现在还在使用System.out.println(“Hello,小明!”)记录日志吗？</p>
 </blockquote>
-<h3 id="我经历过的日志组件"><a href="#我经历过的日志组件" class="headerlink" title="我经历过的日志组件"></a>我经历过的日志组件</h3><hr>
-<p>我最开始接触的日志组件是Log4j</p>
+<h3 id="我经历过的日志组件"><a href="#我经历过的日志组件" class="headerlink" title="我经历过的日志组件"></a>我经历过的日志组件</h3><p>我最开始接触的日志组件是Log4j</p>
 <blockquote>
 <p>Log4j 作为Apache的一个开放源代码的项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件等我们期望它输出到的地方；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。</p>
 </blockquote>
+<a id="more"></a>
 <p>我们可以通过一个配置文件来灵活地进行上面的配置，而不需要修改应用的代码。Log4j作为当时作为最先比较流行的日志框架，给我们在应用开发和维护带来了很大的便捷。</p>
 <p>但是，如今还是慢慢的走下“神坛”呢，逐渐被Logback替代，众里寻她千百度，原来Logback是升级版，相对Log4j而言有了更多的改进，而且开发人员竟然是同班人马（其实就是一个人写的）！</p>
 <h3 id="新星Logback"><a href="#新星Logback" class="headerlink" title="新星Logback"></a>新星Logback</h3><ol>
@@ -318,14 +316,12 @@
 <li>logback-access</li>
 </ul>
 <p>logback-core是其它模块的基础设施，其它模块基于它构建，显然，logback-core提供了一些关键的通用机制。logback-classic的地位和作用等同于 Log4J，它也被认为是 Log4J的一个改进版，并且它实现了简单日志门面 SLF4J；而 logback-access主要作为一个与 Servlet容器交互的模块，比如说tomcat或者 jetty，提供一些与 HTTP访问相关的功能。</p>
-<h3 id="那Sl4J又是什么？"><a href="#那Sl4J又是什么？" class="headerlink" title="那Sl4J又是什么？"></a>那Sl4J又是什么？</h3><hr>
-<blockquote>
+<h3 id="那Sl4J又是什么？"><a href="#那Sl4J又是什么？" class="headerlink" title="那Sl4J又是什么？"></a>那Sl4J又是什么？</h3><blockquote>
 <p>slf4j:The Simple Logging Facade for Java 即java的简单日志门面</p>
 </blockquote>
 <p>简答的讲就是slf4j是一系列的日志接口，slf4j是作为一个日志的抽象行为存在的，但是并没有提供真正的实现。</p>
 <p>slf4j为各种日志框架提供了一个统一的界面，使用户可以用统一的接口记录日志，动态地决定要使用的实现框架，比如Logback，Log4j，common-logging等框架都实现了这些接口。</p>
-<h3 id="我是如何配置日志的？"><a href="#我是如何配置日志的？" class="headerlink" title="我是如何配置日志的？"></a>我是如何配置日志的？</h3><hr>
-<p>路人皆知，Springboot默认使用的日志框架是Logback。顺势而为，在项目中，我们使用Logback，其实只需增加一个配置文件（自定义你的配置）即可。</p>
+<h3 id="我是如何配置日志的？"><a href="#我是如何配置日志的？" class="headerlink" title="我是如何配置日志的？"></a>我是如何配置日志的？</h3><p>路人皆知，Springboot默认使用的日志框架是Logback。顺势而为，在项目中，我们使用Logback，其实只需增加一个配置文件（自定义你的配置）即可。</p>
 <h3 id="配置文件详解"><a href="#配置文件详解" class="headerlink" title="配置文件详解"></a>配置文件详解</h3><p>配置文件精简结构如下所示</p>
 <p>这个文件在springboot中默认叫做logback-spring.xml，我们只要新建一个同名文件放在resources下面， 配置即可生效。</p>
 <p>每个配置的解释如下所示：</p>
@@ -356,11 +352,8 @@
 <h5 id="LevelFilter"><a href="#LevelFilter" class="headerlink" title="LevelFilter"></a>LevelFilter</h5><p>级别过滤器，根据日志级别进行过滤。如果日志级别等于配置级别，过滤器会根据onMath(用于配置符合过滤条件的操作) 和 onMismatch(用于配置不符合过滤条件的操作)接收或拒绝日志。</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span> <span class="attr">class</span>=<span class="string">&quot;ch.qos.logback.classic.filter.LevelFilter&quot;</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;<span class="name">level</span>&gt;</span>INFO<span class="tag">&lt;/<span class="name">level</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;<span class="name">onMatch</span>&gt;</span>ACCEPT<span class="tag">&lt;/<span class="name">onMatch</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;<span class="name">onMismatch</span>&gt;</span>DENY<span class="tag">&lt;/<span class="name">onMismatch</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="项目实例"><a href="#项目实例" class="headerlink" title="项目实例"></a>项目实例</h3><hr>
-<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><hr>
-<p>一个简单正常的Springboot项目</p>
-<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><hr>
-<h5 id="application-yml"><a href="#application-yml" class="headerlink" title="application.yml"></a>application.yml</h5><p>有关日志的简单配置，我们可以直接在application.yml中进行简单的配置，比如指明日志的打印级别和日志的输出位置</p>
+<h3 id="项目实例"><a href="#项目实例" class="headerlink" title="项目实例"></a>项目实例</h3><h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><p>一个简单正常的Springboot项目</p>
+<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><h5 id="application-yml"><a href="#application-yml" class="headerlink" title="application.yml"></a>application.yml</h5><p>有关日志的简单配置，我们可以直接在application.yml中进行简单的配置，比如指明日志的打印级别和日志的输出位置</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">root:</span> <span class="string">info</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">./logs</span></span><br></pre></td></tr></table></figure>
 
 <p>也可以根据分环境配置指明使用的配置文件，缺省为==logback-spring.xml==</p>
@@ -378,9 +371,8 @@
 <p>如果我们使用的是lomok插件，则xiaoming指的是topic</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Slf4j(topic = &quot;xiaoming&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">XiaoMingTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><hr>
-<p>小明目前用到的就这么多啦，更多的日志配置场景，大家可以访问：看完这个不会配置 logback ，请你吃瓜！<a target="_blank" rel="noopener" href="https://note.youdao.com/">https://juejin.im/post/5b51f85c5188251af91a7525</a></p>
-<p>来源: <img src="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwOTI2ODY3Nw==&scene=161#wechat_redirect" alt="https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzIwOTI2ODY3Nw==&amp;scene=161#wechat_redirect"></p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>小明目前用到的就这么多啦，更多的日志配置场景，大家可以访问：看完这个不会配置 logback ，请你吃瓜！<a target="_blank" rel="noopener" href="https://note.youdao.com/">https://juejin.im/post/5b51f85c5188251af91a7525</a></p>
+<p>来源: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwOTI2ODY3Nw==&scene=161#wechat_redirect">https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzIwOTI2ODY3Nw==&amp;scene=161#wechat_redirect</a></p>
 
     </div>
 
@@ -555,7 +547,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">11k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
