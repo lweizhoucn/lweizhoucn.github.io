@@ -108,3 +108,4 @@ search:
   format: html
   limit: 100
 
+plugins: hexo-generate-feed
