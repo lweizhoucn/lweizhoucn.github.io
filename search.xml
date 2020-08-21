@@ -35,7 +35,7 @@
 <h4 id="type"><a href="#type" class="headerlink" title="type"></a>type</h4><p><strong>type</strong> 用于说明 commit 的类别，只允许使用下面7个标识。</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">feat：新功能（feature）</span><br><span class="line">fix：修补bug</span><br><span class="line">docs：文档（documentation）</span><br><span class="line">style： 格式（不影响代码运行的变动）</span><br><span class="line">refactor：重构（即不是新增功能，也不是修改bug的代码变动）</span><br><span class="line">test：增加测试</span><br><span class="line">chore：构建过程或辅助工具的变动</span><br></pre></td></tr></table></figure>
 
-<p>如果<strong>type</strong>为<strong>feat</strong>和<strong>fix</strong>，则该 commit 将肯定出现在 Change log 之中。其他情况（<strong>docs</strong>、<strong>chore</strong>、<strong>style</strong>、<strong>refactor</strong>、<strong>test</strong>）由你决定，要不要放入 Change log，建议是不要。</p>
+<p>如果==type==为<strong>feat</strong>和<strong>fix</strong>，则该 commit 将肯定出现在 Change log 之中。其他情况（<strong>docs</strong>、<strong>chore</strong>、<strong>style</strong>、<strong>refactor</strong>、<strong>test</strong>）由你决定，要不要放入 Change log，建议是不要。</p>
 <h4 id="scope"><a href="#scope" class="headerlink" title="scope"></a>scope</h4><p><strong>scope</strong>用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。</p>
 <h4 id="subject"><a href="#subject" class="headerlink" title="subject"></a>subject</h4><p><strong>subject</strong>是 commit 目的的简短描述，不超过50个字符</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">以动词开头，使用第一人称现在时，比如change，而不是changed或changes</span><br><span class="line">第一个字母小写</span><br><span class="line">结尾不加句号（.）</span><br></pre></td></tr></table></figure>
