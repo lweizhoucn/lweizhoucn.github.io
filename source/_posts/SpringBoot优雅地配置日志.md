@@ -30,8 +30,7 @@ categories: springboot
 * logback-classic
 * logback-access
 
-logback-core是其它模块的基础设施，其它模块基于它构建，显然，logback-core提供了一些关键的通用机制。logback-classic的地位和作用等同于 Log4J，它也被认为是 Log4J
-的一个改进版，并且它实现了简单日志门面 SLF4J；而logback-access主要作为一个与Servlet容器交互的模块，比如说tomcat或者jetty，提供一些与HTTP访问相关的功能。
+logback-core是其它模块的基础设施，其它模块基于它构建，显然，logback-core提供了一些关键的通用机制。logback-classic的地位和作用等同于 Log4J，它也被认为是 Log4J的一个改进版，并且它实现了简单日志门面 SLF4J；而logback-access主要作为一个与Servlet容器交互的模块，比如说tomcat或者jetty，提供一些与HTTP访问相关的功能。
 
 ### 那Sl4J又是什么？
 
@@ -106,9 +105,9 @@ filter其实是appender里面的子元素。它作为过滤器存在，执行一
 
 * ACCEPT：日志会被立即处理，不再经过剩余过滤器
 
-#### 有以下几种过滤器
+##### 有以下几种过滤器
 
-##### ThresholdFilter
+###### ThresholdFilter
 
 临界值过滤器，过滤掉低于指定临界值的日志。当日志级别等于或高于临界值时，过滤器返回==NEUTRAL==；当日志级别低于临界值时，日志会被拒绝。
 ```xml
@@ -117,7 +116,7 @@ filter其实是appender里面的子元素。它作为过滤器存在，执行一
     </filter>
 ```
 
-##### LevelFilter
+###### LevelFilter
 
 级别过滤器，根据日志级别进行过滤。如果日志级别等于配置级别，过滤器会根据onMath(用于配置符合过滤条件的操作) 和 onMismatch(用于配置不符合过滤条件的操作)接收或拒绝日志。
 
