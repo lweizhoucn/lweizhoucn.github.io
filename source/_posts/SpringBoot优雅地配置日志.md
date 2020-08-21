@@ -1,7 +1,7 @@
 ---
 title: SpringBoot优雅地配置日志
 date: 2020-08-21T11:16:43+08:00
-tags: springboot,log
+tags: springboot
 categories: springboot 
 ---
 
@@ -28,7 +28,8 @@ categories: springboot
 * logback-classic
 * logback-access
 
-logback-core是其它模块的基础设施，其它模块基于它构建，显然，logback-core提供了一些关键的通用机制。logback-classic的地位和作用等同于 Log4J，它也被认为是 Log4J的一个改进版，并且它实现了简单日志门面 SLF4J；而 logback-access主要作为一个与 Servlet容器交互的模块，比如说tomcat或者 jetty，提供一些与 HTTP访问相关的功能。
+logback-core是其它模块的基础设施，其它模块基于它构建，显然，logback-core提供了一些关键的通用机制。logback-classic的地位和作用等同于 Log4J，它也被认为是 Log4J
+的一个改进版，并且它实现了简单日志门面 SLF4J；而logback-access主要作为一个与Servlet容器交互的模块，比如说tomcat或者jetty，提供一些与HTTP访问相关的功能。
 
 ### 那Sl4J又是什么？
 > slf4j:The Simple Logging Facade for Java 即java的简单日志门面
@@ -57,11 +58,9 @@ slf4j为各种日志框架提供了一个统一的界面，使用户可以用统
     <appender>
         //xxxx
     </appender>   
-
     <logger>
         //xxxx
     </logger>
-
     <root>             
        //xxxx
     </root>  
