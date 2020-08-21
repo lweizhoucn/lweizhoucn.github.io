@@ -11,6 +11,7 @@ categories: springboot
 > 本文主要给大家介绍SpringBoot中如何通过sl4j日志组件优雅地记录日志。其实，我们入门 JAVA 的第一行代码就是一行日志，那你现在还在使用System.out.println("Hello,小明!")记录日志吗？
 
 ### 我经历过的日志组件
+
 我最开始接触的日志组件是Log4j
 > Log4j 作为Apache的一个开放源代码的项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件等我们期望它输出到的地方；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
 <!--more-->
@@ -19,6 +20,7 @@ categories: springboot
 但是，如今还是慢慢的走下“神坛”呢，逐渐被Logback替代，众里寻她千百度，原来Logback是升级版，相对Log4j而言有了更多的改进，而且开发人员竟然是同班人马（其实就是一个人写的）！
 
 ### 新星Logback
+
 1. 更快的执行速度：基于我们先前在Log4j上的工作，Logback 重写了内部的实现，在某些特定的场景上面，甚至可以比之前的速度快上10倍。在保证Logback的组件更加快速的同时，同时所需的内存更加少；
 2. 充分的测试：Logback历经了几年，数不清小时数的测试。尽管Log4j也是测试过的，但是Logback的测试更加充分，跟Log4j不在同一个级别。我们认为，这正是人们选择Logback而不是Log4j的最重要的原因。谁不希望即使在恶劣的条件下，你的日志框架依然稳定而可靠呢？
 
@@ -32,6 +34,7 @@ logback-core是其它模块的基础设施，其它模块基于它构建，显�
 的一个改进版，并且它实现了简单日志门面 SLF4J；而logback-access主要作为一个与Servlet容器交互的模块，比如说tomcat或者jetty，提供一些与HTTP访问相关的功能。
 
 ### 那Sl4J又是什么？
+
 > slf4j:The Simple Logging Facade for Java 即java的简单日志门面
 
 简答的讲就是slf4j是一系列的日志接口，slf4j是作为一个日志的抽象行为存在的，但是并没有提供真正的实现。
@@ -39,6 +42,7 @@ logback-core是其它模块的基础设施，其它模块基于它构建，显�
 slf4j为各种日志框架提供了一个统一的界面，使用户可以用统一的接口记录日志，动态地决定要使用的实现框架，比如Logback，Log4j，common-logging等框架都实现了这些接口。
 
 ### 我是如何配置日志的？
+
 路人皆知，Springboot默认使用的日志框架是Logback。顺势而为，在项目中，我们使用Logback，其实只需增加一个配置文件（自定义你的配置）即可。
 
 ### 配置文件详解
@@ -54,10 +58,9 @@ slf4j为各种日志框架提供了一个统一的界面，使用户可以用统
     <!-- 属性文件:在properties/yml文件中找到对应的配置项 -->
     <springProperty scope="context" name="logging.path" source="logging.path"/>
     <contextName>程序员小明</contextName> 
-
     <appender>
         //xxxx
-    </appender>   
+    </appender> 
     <logger>
         //xxxx
     </logger>
