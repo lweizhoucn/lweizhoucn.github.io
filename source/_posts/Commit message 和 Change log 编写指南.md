@@ -3,7 +3,7 @@ title: Commit message 和 Change log 编写指南
 categories:
   - git
 abbrlink: 2910968457
-date: 2020-08-17 02:32:41
+date: 2019-08-10 02:32:41
 ---
 > 转载自 [Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
 
