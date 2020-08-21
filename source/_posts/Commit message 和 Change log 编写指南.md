@@ -85,7 +85,7 @@ test：增加测试
 chore：构建过程或辅助工具的变动
 ```
 
-如果**type**为**feat**和**fix**，则该 commit 将肯定出现在 Change log 之中。其他情况（**docs**、**chore**、**style**、**refactor**、**test**）由你决定，要不要放入 Change log，建议是不要。
+如果==type==为**feat**和**fix**，则该 commit 将肯定出现在 Change log 之中。其他情况（**docs**、**chore**、**style**、**refactor**、**test**）由你决定，要不要放入 Change log，建议是不要。
 
 #### scope
 **scope**用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。
