@@ -1,8 +1,9 @@
 ---
 title: SpringBoot优雅地配置日志
-date: 2020-08-21T11:16:43+08:00
 tags: springboot
-categories: springboot 
+categories: springboot
+abbrlink: 1722421508
+date: 2020-08-21 03:16:43
 ---
 
 
