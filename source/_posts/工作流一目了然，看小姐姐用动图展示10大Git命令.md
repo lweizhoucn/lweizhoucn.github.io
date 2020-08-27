@@ -1,6 +1,7 @@
 ---
 title: 工作流一目了然，看小姐姐用动图展示10大Git命令
 tags: git
+categorys: git
 abbrlink: 1267633375
 date: 2020-08-27 13:19:27
 ---
