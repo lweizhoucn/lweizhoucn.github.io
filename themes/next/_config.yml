@@ -423,7 +423,7 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Microsoft YaHei
+    family:
     size:
 
   # Font settings for site title (.site-title).
@@ -441,8 +441,8 @@ font:
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family:
-
+    family: Ma Shan Zheng
+    size: 12
   # Font settings for <code> and code blocks.
   codes:
     external: true
