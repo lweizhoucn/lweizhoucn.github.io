@@ -56,8 +56,8 @@
   {%- if theme.pjax %}
     </div>
   {%- endif %}
-  {% include '../source/lib/calendar/calendar.swig' %}
 
+  {% include '_third-party/calendar/calendar.swig' %}
 </body>
 </html>
 
