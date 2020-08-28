@@ -32,6 +32,8 @@ custom_file_path:
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   #style: source/_data/styles.styl
+  sidebar: source/_data/sidebar.swig
+  styles: source/_data/calendar.styl
 
 
 # ---------------------------------------------------------------
@@ -1003,3 +1005,10 @@ images: images
 auto_excerpt:
   enable: true
   length: 50
+
+
+CloudCalendar:
+  enable: true
+  language: zh-CN
+  single: true
+  root: /calendar/
