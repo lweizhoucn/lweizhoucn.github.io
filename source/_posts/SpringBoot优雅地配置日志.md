@@ -1,7 +1,12 @@
 ---
 title: SpringBoot优雅地配置日志
-tags: springboot
-categories: springboot
+tags: 
+    - springboot
+    - log
+    - slf4j
+categories: 
+    - springboot
+    - log
 abbrlink: 1722421508
 date: 2020-08-21 03:16:43
 ---
