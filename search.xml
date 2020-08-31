@@ -185,9 +185,12 @@
 ]]></content>
       <categories>
         <category>springboot</category>
+        <category>log</category>
       </categories>
       <tags>
         <tag>springboot</tag>
+        <tag>log</tag>
+        <tag>slf4j</tag>
       </tags>
   </entry>
   <entry>
