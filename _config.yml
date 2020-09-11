@@ -118,9 +118,9 @@ tag_cloud:
   maxSpeed: 0.1
   pauseOnSelected: false # true 意味着当选中对应 tag 时,停止转动
 
-
+# Markdown-it config
 markdown:
-  preset: 'default'
+  preset: 'commonmark'
   render:
     html: true
     xhtmlOut: false
@@ -139,7 +139,6 @@ markdown:
     - markdown-it-deflist
     - markdown-it-imsize
     - markdown-it-mark
-    - markdown-it-math
     - markdown-it-regexp
     - markdown-it-task-checkbox
     - name: markdown-it-container
@@ -153,7 +152,7 @@ markdown:
     - markdown-it-deflist
     - name: markdown-it-emoji
       options:
-        shortcuts: {}
+        shortcuts: { }
   anchors:
     level: 2
     collisionSuffix: ''

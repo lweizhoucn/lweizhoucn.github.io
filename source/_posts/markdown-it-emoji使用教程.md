@@ -1,11 +1,12 @@
 ---
 title: markdown-it-emoji使用教程
-date: 2020-09-11 15:10:42
-tags: 
-    - emoji
-    - hexo
+tags:
+  - emoji
+  - hexo
 categories:
-    - markdown
+  - markdown
+abbrlink: 19333065
+date: 2020-09-11 15:10:42
 ---
 
 > 在使用hexo写博客时，希望加入一些emoji表情，增加文章的趣味性。
