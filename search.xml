@@ -209,8 +209,9 @@
   <entry>
     <title>不同路径</title>
     <url>/posts/2753593760/</url>
-    <content><![CDATA[<p>问总共有多少条不同的路径？<br>
-<img src="/posts/2753593760/robot_maze.png" alt="robot_maze"><br>
+    <content><![CDATA[<p>问总共有多少条不同的路径？</p>
+<a id="more"></a>
+<p><img src="/posts/2753593760/robot_maze.png" alt="robot_maze"><br>
 例如，上图是一个7 x 3 的网格。有多少可能的路径？</p>
 <p><strong>示例 1:</strong></p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">输入: m = 3, n = 2</span><br><span class="line">输出: 3</span><br><span class="line">解释:</span><br><span class="line">从左上角开始，总共有 3 条路径可以到达右下角。</span><br><span class="line">1. 向右 -&gt; 向右 -&gt; 向下</span><br><span class="line">2. 向右 -&gt; 向下 -&gt; 向右</span><br><span class="line">3. 向下 -&gt; 向右 -&gt; 向右</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -356,6 +357,7 @@
     <content><![CDATA[<blockquote>
 <p>在使用hexo写博客时，希望加入一些emoji表情，增加文章的趣味性。</p>
 </blockquote>
+<a id="more"></a>
 <h3 id="安装markdown-it-emoji包">安装markdown-it-emoji包</h3>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install markdown-it-emoji --save</span><br></pre></td></tr></table></figure>
 <h3 id="使用emoji">使用emoji</h3>
@@ -2195,6 +2197,9 @@
 </tbody>
 </table>
 ]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
         <tag>emoji</tag>
