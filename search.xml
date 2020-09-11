@@ -213,15 +213,24 @@
 <img src="/posts/2753593760/robot_maze.png" alt="robot_maze"><br>
 例如，上图是一个7 x 3 的网格。有多少可能的路径？</p>
 <p><strong>示例 1:</strong></p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">输入: m = 3, n = 2</span><br><span class="line">输出: 3</span><br><span class="line">解释:</span><br><span class="line">从左上角开始，总共有 3 条路径可以到达右下角。</span><br><span class="line">1. 向右 -&gt; 向右 -&gt; 向下</span><br><span class="line">2. 向右 -&gt; 向下 -&gt; 向右</span><br><span class="line">3. 向下 -&gt; 向右 -&gt; 向右</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">**示例 2:** </span><br><span class="line">```text </span><br><span class="line">输入: m = 7, n = 3</span><br><span class="line">输出: 28 </span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">输入: m = 3, n = 2</span><br><span class="line">输出: 3</span><br><span class="line">解释:</span><br><span class="line">从左上角开始，总共有 3 条路径可以到达右下角。</span><br><span class="line">1. 向右 -&gt; 向右 -&gt; 向下</span><br><span class="line">2. 向右 -&gt; 向下 -&gt; 向右</span><br><span class="line">3. 向下 -&gt; 向右 -&gt; 向右</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>示例 2:</strong></p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">输入: m = 7, n = 3</span><br><span class="line">输出: 28</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p><strong>提示：</strong><br>
 1 &lt;= m, n &lt;= 100<br>
 题目数据保证答案小于等于 2 * 10 ^ 9</p>
 <hr>
 <p>因为机器到底右下角，向下几步，向右几步都是固定的，<br>
 比如，<code>m=3, n=2</code>，我们只要向下 1 步，向右 2 步就一定能到达终点。<br>
-所以有 $$C_{m+n-2}^{m-1}$$</p>
+所以有 $$ C_{m+n-2}^{m-1} $$</p>
 ]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>动态规划</tag>
+        <tag>leetcode</tag>
+      </tags>
   </entry>
   <entry>
     <title>工作流一目了然，看小姐姐用动图展示10大Git命令</title>
@@ -335,8 +344,8 @@
         <category>leetcode</category>
       </categories>
       <tags>
-        <tag>leetcode</tag>
         <tag>动态规划</tag>
+        <tag>leetcode</tag>
         <tag>回溯</tag>
         <tag>DFS</tag>
       </tags>
