@@ -86,6 +86,11 @@
       </categories>
   </entry>
   <entry>
+    <title>IDEA社区版功能简介</title>
+    <url>/posts/3808420467/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>SpringBoot优雅地配置日志</title>
     <url>/posts/1722421508/</url>
     <content><![CDATA[<blockquote>
@@ -295,6 +300,27 @@
 ]]></content>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>迷路的机器人</title>
+    <url>/posts/1113503309/</url>
+    <content><![CDATA[<p>设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。设计一种算法，寻找机器人从左上角移动到右下角的路径。<br>
+<img src="/posts/1113503309/robot_maze.png" alt="robot_maze"><br>
+网格中的障碍物和空位置分别用 1 和 0 来表示。</p>
+<p>返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。如果没有可行的路径，返回空数组。</p>
+<p><strong>示例1:</strong></p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">输入:</span><br><span class="line">[</span><br><span class="line"> [0,0,0],</span><br><span class="line"> [0,1,0],</span><br><span class="line"> [0,0,0]</span><br><span class="line">]</span><br><span class="line">输出: [[0,0],[0,1],[0,2],[1,2],[2,2]]</span><br><span class="line">解释: </span><br><span class="line">输入中标粗的位置即为输出表示的路径，即</span><br><span class="line">0行0列（左上角） -&gt; 0行1列 -&gt; 0行2列 -&gt; 1行2列 -&gt; 2行2列（右下角）</span><br><span class="line"></span><br><span class="line">来源：力扣（LeetCode）</span><br><span class="line">链接：https://leetcode-cn.com/problems/robot-in-a-grid-lcci</span><br><span class="line">著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</span><br></pre></td></tr></table></figure>
+<p>说明：r 和 c 的值均不超过 100。</p>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>动态规划</tag>
+        <tag>回溯</tag>
+        <tag>DFS</tag>
       </tags>
   </entry>
 </search>
