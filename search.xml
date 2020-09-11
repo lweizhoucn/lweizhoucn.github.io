@@ -350,9 +350,8 @@
 <h3 id="安装markdown-it-emoji包">安装markdown-it-emoji包</h3>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install markdown-it-emoji --save</span><br></pre></td></tr></table></figure>
 <h3 id="使用emoji">使用emoji</h3>
-<p>对于想使用的emoji表情，可以通过查看<a href="https://www.webfx.com/tools/emoji-cheat-sheet/">emoji表请表</a>，对于想要使用的表情直接copy就好。<br>
-为了防止链接失效，对网站的表请进行备份（备份过程中，发现有部分表情无法解析）</p>
-<p>Peple</p>
+<p>对于想使用的emoji表情，可以通过查看<a href="https://www.webfx.com/tools/emoji-cheat-sheet/">emoji表情表</a>，对于想要使用的表情直接copy就好。<br>
+为了防止链接失效，对网站的表情进行备份（备份过程中，发现有部分表情无法解析）</p>
 <table>
 <thead>
 <tr>
@@ -2187,5 +2186,9 @@
 </tbody>
 </table>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>emoji</tag>
+      </tags>
   </entry>
 </search>
