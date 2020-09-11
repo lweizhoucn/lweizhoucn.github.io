@@ -15,10 +15,9 @@ npm install markdown-it-emoji --save
 
 ### 使用emoji
 
-对于想使用的emoji表情，可以通过查看[emoji表请表](https://www.webfx.com/tools/emoji-cheat-sheet/)，对于想要使用的表情直接copy就好。
-为了防止链接失效，对网站的表请进行备份（备份过程中，发现有部分表情无法解析）
+对于想使用的emoji表情，可以通过查看[emoji表情表](https://www.webfx.com/tools/emoji-cheat-sheet/)，对于想要使用的表情直接copy就好。
+为了防止链接失效，对网站的表情进行备份（备份过程中，发现有部分表情无法解析）
 
-Peple
 |Symbols|Places|Objects|Nature|People|
 |-:|-:|-:|-:|-:|
 |`:one:` :one:|`:house:` :house:|`:bamboo:` :bamboo:|`:sunny:` :sunny:|`:bowtie:` :bowtie:|
