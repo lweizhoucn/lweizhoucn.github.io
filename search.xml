@@ -209,7 +209,10 @@
   <entry>
     <title>markdown-it-emoji使用教程</title>
     <url>/posts/19333065/</url>
-    <content><![CDATA[<p><code>:bowtie:</code> :bowtie:</p>
+    <content><![CDATA[<p><code>:bowtie:</code><br>
+😚<br>
+:bowtie:<br>
+😉😃😑:bowtie:😩😲</p>
 ]]></content>
   </entry>
   <entry>
